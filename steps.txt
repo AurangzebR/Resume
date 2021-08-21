@@ -1,0 +1,2 @@
+ng new reumeApp
+ng add @angular/material

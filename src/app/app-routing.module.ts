@@ -5,7 +5,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {path:'skills', component: SkillsComponent , pathMatch:'full' },
-  {path:'profile' , component:ProfileComponent, pathMatch:'full'}
+  {path:'' , component:ProfileComponent, pathMatch:'full'}
 ];
 
 @NgModule({

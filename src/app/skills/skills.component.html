@@ -1,14 +1,60 @@
-<div class="container" >
-<a href="#" style="background-color: rgb(2, 34, 2);" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">
-<div class="container">
+<div class='container' 
+    style=" background-color:rgb(114, 29, 3)">
+     <br> <br>
+    <svg xmlns="http://www.w3.org/2000/svg" style="margin-left:45%; color:aqua;" 
+    width="35" height="35"fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 
+      3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 
+      0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 
+      0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 
+      0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+    </svg>
+<br>
+<h1 style="margin-left:42%; color:aliceblue;">Skills</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div  *ngFor='let skill of mySkills' style="margin-top:1%;">
+<a href="#" style="background-color: rgb(224, 40, 8);" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">
+<div >
     <ul class="list-group list-group-horizontal" >
-        <li class="list-group-item" style="background-color: rgb(2, 34, 2);">
-            <h3 style="color: azure;">Java</h3></li>
+        <li class="list-group-item" style="background-color: rgb(224, 40, 8);">
+            <h3 style="color: azure;">{{skill.name}}</h3></li>
         <li class="list-group-item" style="margin-left: 70%;
-         background-color: rgb(2, 34, 2);">
-            <p style="color: azure;">5 years</p></li></ul>
-<p style="color: azure;">This will be the summarized discription of the programing language above</p>
+         background-color: rgb(224, 40, 8);">
+            <p style="color: azure;">{{skill.noYears}} years</p></li></ul>
+<p style="color: azure;">{{skill.description}}</p>
 
 </div>
 </a>
+</div>
+<h1 style="margin-left:42%; color:aliceblue;">Projects</h1>
+<div  *ngFor='let project of myProjects' style="margin-top:1%;">
+    <a href="#" style="background-color: rgb(224, 40, 8);" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">
+    <div >
+        <ul class="list-group list-group-horizontal" >
+            <li class="list-group-item" style="background-color: rgb(224, 40, 8);">
+                <h4 style="color: azure;">{{project.companyName}}</h4></li>
+                <li class="list-group-item" style="background-color: rgb(224, 40, 8);">
+                    <h6 style="color: azure;">{{project.projectName}}</h6></li>
+            <li class="list-group-item" style="margin-left: 50%;
+             background-color: rgb(224, 40, 8);">
+                <p style="color: azure;">{{project.dateFrom.month}}/{{project.dateFrom.day}}/{{project.dateFrom.year}}</p></li></ul>
+    <p style="color: azure;">{{project.description}}</p>
+    
+    </div>
+    </a>
+    </div>
+
+
 </div>
